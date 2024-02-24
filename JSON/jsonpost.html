@@ -41,8 +41,23 @@
                 const valid = formElement.reportValidity();
                 if(valid){
                     const result = getFormJson(formElement);
+                    const images = [result.images].flat().filter((file) => !!file.name);
+                    const languages = [result.languages || []].flat();
+                    const isHappyReader = !!(result.isHappyReader && result.isHappyReader === 'on');
+
+                    const output={
+                        ...result,
+                        images,
+                        langages,
+                        isHappyReader
+                    };
+
+                    alert('Form Submitted Successfully!! Check Console for JSON Data');
+                    console.log(output)
                 }
-            }
+            };
+
+            formElement.addEventListener("submit", handler);
         </script>
     </body>
 </html>
