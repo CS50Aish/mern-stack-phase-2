@@ -1,34 +1,40 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"Alice",
-            "email":"alice@gmail.com",
-            "phone":"123-456-7890"
-        },
-        {
-            "id":2,
-            "name":"Bob",
-            "email":"bob@yahoo.com",
-            "phone":"123-456-7891"
-        },
-        {
-            "id":3,
-            "name":"Charlie",
-            "email":"charlie@outlook.com",
-            "phone":"123-456-7892"
-        },
-        {
-            "id":4,
-            "name":"John",
-            "email":"john@outlook.com",
-            "phone":"123-456-7893"
-        },
-        {
-            "id":5,
-            "name":"Sam",
-            "email":"sam@gmail.com",
-            "phone":"123-456-7894"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "email": "alice@gmail.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "email": "bob@yahoo.com",
+      "phone": "123-456-7891"
+    },
+    {
+      "id": "3",
+      "name": "Charlie",
+      "email": "charlie@outlook.com",
+      "phone": "123-456-7892"
+    },
+    {
+      "id": "4",
+      "name": "John",
+      "email": "john@outlook.com",
+      "phone": "123-456-7893"
+    },
+    {
+      "id": "5",
+      "name": "Sam",
+      "email": "sam@gmail.com",
+      "phone": "123-456-7894"
+    },
+    {
+      "id": 6,
+      "name": "Roy",
+      "email": "roy@outlook.com",
+      "phone": "123-456-7895"
+    }
+  ]
 }
