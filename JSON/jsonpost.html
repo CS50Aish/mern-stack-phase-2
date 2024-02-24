@@ -38,6 +38,10 @@
 
             const handler = (event) => {
                 event.preventDefault();
+                const valid = formElement.reportValidity();
+                if(valid){
+                    const result = getFormJson(formElement);
+                }
             }
         </script>
     </body>
