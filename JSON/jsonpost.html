@@ -6,7 +6,39 @@
     </head>
     <body>
         <h1>Create JSON Data</h1>
+        <form name="forms" id="forms">
+            <label>What's your username?</label>
+            <input type="text" name="username"/>
+            <label>How many ysears have you been a developer?</label>
+            <input type="number" name="age"/>
+            <label>Upload Images</label>
+            <input type="file" accept="image/png, image/jpeg" multiple name="images"/>
+            <label>Do you know JavaScript?</label>
+            <input type="checkbox" name="languages" value="javacript"/>JavaScript
+            <label>Do you know Python?</label>
+            <input type="checkbox" name="languages" value="python"/>Python
+            <label>Enjoyed this blog?</label>
+            <input type="checkbox" name="isHappyReader" />
+            <button type="submit">Submit</button>
+        </form>
 
+        <script>
+            const formElement = document.querySelector('form#forms');
+            const getFormJson = (form) => {
+                const data = new FormData(form);
+                return Array.from(data.keys()).reduce((result, key)=>{
+                    if(result[key]){
+                        result[key] = data.getAll(key);
+                        return result;
+                    }
+                    result[key] = data.get(key);
+                    return result;
+                }, {});
+            };
 
+            const handler = (event) => {
+                event.preventDefault();
+            }
+        </script>
     </body>
 </html>
