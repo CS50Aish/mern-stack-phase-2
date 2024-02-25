@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Bike from './Bike';
 import reportWebVitals from './reportWebVitals';
+import MyList from './MyList';
 
+const items = [
+  {id:0, name:'John'},
+  {id:1, name:'Sam'},
+  {id:3, name:'Roy'}
+]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Bike />
+    <MyList />
   </React.StrictMode>
 );
 
