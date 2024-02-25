@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Bike from './Bike';
 import reportWebVitals from './reportWebVitals';
+import Bike from './Bike';
 import MyList from './MyList';
 import Counter from './Counter';
 
 const items = [
   {id:0, name:'John'},
   {id:1, name:'Sam'},
-  {id:3, name:'Roy'}
+  {id:2, name:'Roy'}
 ]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
