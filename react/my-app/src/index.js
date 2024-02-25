@@ -4,6 +4,7 @@ import './index.css';
 import Bike from './Bike';
 import reportWebVitals from './reportWebVitals';
 import MyList from './MyList';
+import Counter from './Counter';
 
 const items = [
   {id:0, name:'John'},
@@ -14,7 +15,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Bike />
-    <MyList />
+    <MyList items={items}/>
+    <Counter />
   </React.StrictMode>
 );
 
