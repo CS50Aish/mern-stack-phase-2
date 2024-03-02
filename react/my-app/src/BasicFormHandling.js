@@ -13,6 +13,12 @@ function BasicFormHandling(){
         message: false
     });
 
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setFormValues({ ...formValues, [name]: value});
+        setErrors({ ...errors, [name]: false});
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -39,14 +45,17 @@ function BasicFormHandling(){
             </div>
             <div>
                 <label htmlFor='email'>Email:</label>
-                <input type='text' id='name' name='name' value={formValues.name} onChange={handleChange}></input>
+                <input type='email' id='email' name='email' value={formValues.email} onChange={handleChange}></input>
                 {error.name && <div className='error'>Please enter your email</div>}
             </div>
             <div>
-                <label htmlFor='name'>Name:</label>
-                <input type='text' id='name' name='name' value={formValues.name} onChange={handleChange}></input>
+                <label htmlFor='message'>Message:</label>
+                <input type='message' id='message' name='name' value={formValues.message} onChange={handleChange}></input>
                 {error.name && <div className='error'>Please enter your name</div>}
             </div>
+            <button type=''>Submit</button>
         </form>
     )
 }
+
+export default BasicFormHandling;
