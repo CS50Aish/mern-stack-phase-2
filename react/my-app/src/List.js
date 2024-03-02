@@ -1,7 +1,7 @@
 import React from 'react';
 
 function BookList({books}){
-    return(
+    return (
         <ul>
             {books.map(book => (
                 <li key={book.id}>
@@ -20,8 +20,7 @@ export default function List(){
         {id: 3, title: 'Book3', author: 'Author3'},
         {id: 4, title: 'Book4', author: 'Author4'},
         {id: 5, title: 'Book5', author: 'Author5'},
-        {id: 6, title: 'Book6', author: 'Author6'},
-        {id: 7, title: 'Book7', author: 'Author7'},
+        {id: 6, title: 'Book6', author: 'Author6'}
     ];
 
     return (

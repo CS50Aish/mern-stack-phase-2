@@ -6,15 +6,16 @@ import Bike from './Bike';
 import MyList from './MyList';
 import Counter from './Counter';
 import List from './List';
-import App from './App';
 import BasicFormHandling from './BasicFormHandling';
-import TimerApp from './TimerApp'
+import TimerApp from './TimerApp';
+import GreetingApp from './GreetingApp';
 
 const items = [
   {id:0, name:'John'},
   {id:1, name:'Sam'},
   {id:2, name:'Roy'}
 ]
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,8 @@ root.render(
     <Counter />
     <List />
     <BasicFormHandling />
+    <TimerApp />
+    <GreetingApp />
   </React.StrictMode>
 );
 

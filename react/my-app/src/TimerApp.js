@@ -1,5 +1,5 @@
-import React from 'react'
-import Timer from './Timer'
+import React from 'react';
+import Timer from './Timer';
 
 function TimerApp(){
     return (
@@ -7,5 +7,7 @@ function TimerApp(){
             <h2>Timer App</h2>
             <Timer />
         </div>
-    )
+    );
 }
+
+export default TimerApp;
