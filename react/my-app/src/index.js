@@ -8,6 +8,7 @@ import Counter from './Counter';
 import List from './List';
 import App from './App';
 import BasicFormHandling from './BasicFormHandling';
+import TimerApp from './TimerApp'
 
 const items = [
   {id:0, name:'John'},
