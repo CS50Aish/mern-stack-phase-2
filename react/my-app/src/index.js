@@ -6,6 +6,7 @@ import Bike from './Bike';
 import MyList from './MyList';
 import Counter from './Counter';
 import List from './List';
+import App from './App'
 
 const items = [
   {id:0, name:'John'},
@@ -21,6 +22,7 @@ root.render(
     <MyList items={items}/>
     <Counter />
     <List />
+    <App />
   </React.StrictMode>
 );
 
