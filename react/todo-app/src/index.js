@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import useFetch from './userFetch';
+
+const Home = () => {
+  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+
+  return{
+
+  }
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
