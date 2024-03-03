@@ -17,6 +17,12 @@ function App(){
           </li>
         </ul>
       </nav>
+      <Routes>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
     </div>
   )
 }
+
+export default App;
