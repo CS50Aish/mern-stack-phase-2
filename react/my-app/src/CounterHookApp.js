@@ -5,14 +5,14 @@ function CounterHookApp(){
 
     const mystyle = {
         color: "white",
-        backgroundColor: "Dodgerblue",
+        backgroundColor: "DodgerBlue",
         padding: "10px",
         fontFamily: "Arial",
         border: "2px solid black"
     };
 
     return (
-        <div>
+        <div style={mystyle}>
             <CounterHook />
         </div>
     )
