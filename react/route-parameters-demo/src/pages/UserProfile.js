@@ -7,7 +7,7 @@ function UserProfile(){
         <div>
             <div>
                 <h2>User profile</h2>
-                <p>UserId: {userId}</p>
+                <p>User Id: {userId}</p>
             </div>
         </div>
     );

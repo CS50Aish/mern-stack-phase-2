@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 function Header(){
     return (
         <header>
-            <h1>Route Parameters Demo</h1>
+            <h1>Programmatic Navigation Demo</h1>
             <nav>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/user/123">User Profile</Link>
+                        <Link to="/dashboard">Dashboard</Link>
                     </li>
                 </ul>
             </nav>
