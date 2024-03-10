@@ -6,6 +6,18 @@ function Home(){
     const redirectToDashboard = () => {
         navigate("/dashboard");
     };
+
+    const navigationCondition = (window.performance.navigation && window.performance.navigation.type == 1);
+
+    React.useEffect(() => {
+        if(navigationCondition){
+            console.log("Reload Detected....")
+        }
+        else{
+            console.log("No Reload Detected....")
+        }
+    })
+
     return (
         <div>
             <h2>Welcome to Home Page!</h2>
