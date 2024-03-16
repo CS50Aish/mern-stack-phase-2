@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header(){
+
     return (
         <header>
             <h1>Programmatic Navigation Demo</h1>
@@ -17,6 +18,7 @@ function Header(){
             </nav>
         </header>
     );
+
 }
 
 export default Header;

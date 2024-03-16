@@ -1,10 +1,11 @@
 import React from "react";
+
 import { Link } from 'react-router-dom';
 
 const MenuBar = () => {
     return (
         <nav className="d-flex justify-content-center">
-            <div className="p-2"> 
+            <div className="p-2">
                 <Link to="/home">Home</Link>
             </div>
             <div className="p-2">
@@ -16,4 +17,5 @@ const MenuBar = () => {
         </nav>
     );
 }
+
 export default MenuBar;

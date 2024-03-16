@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 function Dashboard(){
     return (
         <div>
-            <h2>Welcome to my Dashboard Page!</h2>
-            <p>This is the dashboard page of my application.</p>
+           <h2>Welcome to my Dashboard Page!</h2>
+           <p>This is the dashboard page of my application.</p>
         </div>
     )
 }
