@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
-const expect = require('chai/lib/chai/interface/expect');
 
 // Read the HTML file and set up a DOM Environment
 const html = fs.readFileSync(path.resolve(__dirname, '/home/labuser/Desktop/mern-stack-phase-2/dom-testing/index.html'), 'utf-8');
