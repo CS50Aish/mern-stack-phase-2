@@ -1,0 +1,71 @@
+{
+    "login":{
+        "id":1,
+        "emailId": "admin@gmail.com",
+        "password": "admin@123",
+        "typeofuser": "admin"
+    },
+    "customers":[
+        {
+            "accno": 10010,
+            "amount": 2320,
+            "cid": 112233,
+            "cname": "John Smith",
+            "emailId": "john.smith@gmail.com",
+            "password": "john@123",
+            "typeofuser": "customer",
+            "gender": "male",
+            "phonenumber": "91235896452",
+            "address": "124 North Street",
+            "id": 1
+        },
+        {
+            "accno": 10011,
+            "amount": 2520,
+            "cid": 112234,
+            "cname": "Sammy Wood",
+            "emailId": "sam.woody@gmail.com",
+            "password": "sammy@123",
+            "typeofuser": "customer",
+            "gender": "female",
+            "phonenumber": "97824520452",
+            "address": "127 South West",
+            "id": 2
+        }
+    ],
+    "transaction": [
+        {
+            "cid": 112233,
+            "cname":"John Smith",
+            "emailId": "john.smith@gmail.com",
+            "accno": 10010,
+            "amount": 300,
+            "typeoftransaction": "withdraw",
+            "dot": "2024-03-24T08:00:00",
+            "transferTo": 0,
+            "id": 1 
+        },
+        {
+            "cid": 112234,
+            "cname":"Sammy Wood",
+            "emailId": "sam.woody@gmail.com",
+            "accno": 10011,
+            "amount": 500,
+            "typeoftransaction": "withdraw",
+            "dot": "2024-03-24T09:00:00",
+            "transferTo": 0,
+            "id": 2 
+        },
+        {
+            "cid": 112233,
+            "cname":"John Smith",
+            "emailId": "john.smith@gmail.com",
+            "accno": 10010,
+            "amount": 700,
+            "typeoftransaction": "withdraw",
+            "dot": "2024-03-24T10:00:00",
+            "transferTo": 0,
+            "id": 1 
+        }
+    ]
+}
