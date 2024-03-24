@@ -17,8 +17,17 @@ function AdminPage(){
     let [phonenumber, setPhoneNumber] = useState(0);
     let [customerRecordNotFound, setCustomerRecordNotFound] = useState("");
     let navigate = useNavigate();
+
     const logout = (event) => {
         navigate("/");
     }
 
+    const searchCustomerInfo = (event) => {
+        event.preventDefault();
+        setAccNo(0);
+        setcid(0);
+    }
+
 }
+
+export default AdminPage;
