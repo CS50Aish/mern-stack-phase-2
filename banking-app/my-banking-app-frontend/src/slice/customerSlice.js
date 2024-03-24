@@ -26,3 +26,5 @@ export const findCustomer = createAsyncThunk(
         return response.data;
     }
 );
+
+export default customerSlice;
