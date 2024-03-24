@@ -6,5 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 
 function CustomerPage(){
-    
+    let [customer, setCustomer] = useState({});
+    let [account, setAccount] = useState({});
+    let [customerTransaction, setCustomerTransaction] = useState([{}]);
+    let dispatch = useDispatch();
+    let [contactForm, setContactForm] = useState({});
+    let [userPasswordReset, setUserPasswordReset] = useState({"oldPassword": "", "newPassword": "", "repeatNewPassword": ""});
+    let navigate = useNavigate();
+    useEffect
 }
