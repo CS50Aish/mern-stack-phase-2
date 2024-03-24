@@ -13,5 +13,12 @@ function CustomerPage(){
     let [contactForm, setContactForm] = useState({});
     let [userPasswordReset, setUserPasswordReset] = useState({"oldPassword": "", "newPassword": "", "repeatNewPassword": ""});
     let navigate = useNavigate();
-    useEffect
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+        let obj = sessionStorage.getItem("user");
+
+    })
 }
+
+export default CustomerPage;
