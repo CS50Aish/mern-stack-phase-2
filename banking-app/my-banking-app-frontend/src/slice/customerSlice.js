@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const customerState = {
+const customerSlice = {
     updateState: false,
     loading: false,
     customerList: [],

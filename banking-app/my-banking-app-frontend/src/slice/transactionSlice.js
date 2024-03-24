@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const transactionState = {
+const transactionSlice = {
     updateState: false,
     loading: false,
     transactionList: [],
